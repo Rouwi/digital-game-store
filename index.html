@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rowi's Cute Game Shop 🌸 Discounted Robux, Valorant Points & MLBB Diamonds</title>
+  <meta name="description"
+    content="Shop 100% legit discounted Robux, Valorant Points, Mobile Legends diamonds and Starlight passes by Rose Mae Rama. Fast, safe, and super affordable! Contact 09912748872 or ramarosemae3@gmail.com.">
+  <meta name="keywords"
+    content="discounted robux, valorant points cheap, mlbb diamonds philippines, rowi game shop, rose mae rama, weekly diamond pass, starlight pass">
+
+  <!-- Favicon & Cute Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:wght@400;600;700;800;900&family=Quicksand:wght@500;600;700&display=swap"
+    rel="stylesheet">
+
+  <!-- Font Awesome / Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Floating Sparkles Container for dynamic cute effects -->
+  <div id="sparkle-container" aria-hidden="true"></div>
+
+  <!-- Cute Top Announcement Ribbon -->
+  <div class="announcement-bar">
+    <div class="announcement-content">
+      <span class="ribbon-sparkle">✨</span>
+      <span>🌸 <strong>PROMO ALERT:</strong> 100% Legit & Discounted Robux, Valorant Points & MLBB Dias • Open for
+        Orders! 🎀</span>
+      <span class="ribbon-sparkle">✨</span>
+    </div>
+  </div>
+
+  <!-- Header / Navigation -->
+  <header class="site-header">
+    <div class="header-inner container">
+      <a href="#hero" class="brand-logo" id="brand-logo">
+        <div class="avatar-ring">
+          <img src="IMAGE/profilepic.jpg" alt="Rose Mae Rama" class="owner-avatar"
+            onerror="this.src='https://api.dicebear.com/7.x/bottts/svg?seed=Rowi'">
+          <span class="status-dot" title="Online & Ready to Transact"></span>
+        </div>
+        <div class="brand-text">
+          <h1 class="shop-name">Rowi's Shop <span class="cute-badge">Official</span></h1>
+          <p class="shop-tagline">Rose Mae Rama • Discounted Game Top-ups</p>
+        </div>
+      </a>
+
+      <nav class="nav-links" id="main-nav">
+        <a href="#original-posters" class="nav-item"><i class="fa-solid fa-images"></i> Official Flyers</a>
+        <a href="#how-to-order" class="nav-item"><i class="fa-solid fa-heart"></i> How to Order</a>
+        <a href="#catalog" class="nav-item"><i class="fa-solid fa-gamepad"></i> Pricelist</a>
+        <a href="#contact" class="nav-item"><i class="fa-solid fa-address-book"></i> Contacts</a>
+      </nav>
+
+      <div class="header-actions">
+        <!-- Sound Effect Toggle -->
+        <button id="sound-toggle-btn" class="icon-bubble-btn" title="Toggle Cute Sounds"
+          aria-label="Toggle Cute Sounds">
+          <i class="fa-solid fa-volume-high"></i>
+        </button>
+
+        <!-- Cart Trigger Button -->
+        <button id="open-cart-btn" class="cute-cart-btn" aria-label="View Order List">
+          <i class="fa-solid fa-basket-shopping"></i>
+          <span class="cart-label">My Order</span>
+          <span id="cart-counter" class="cart-badge">0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero" class="hero-section">
+    <div class="hero-bg-blobs" aria-hidden="true">
+      <div class="blob blob-1"></div>
+      <div class="blob blob-2"></div>
+      <div class="blob blob-3"></div>
+    </div>
+
+    <div class="container hero-container">
+      <div class="hero-content">
+        <div class="cute-pill-tag">
+          <i class="fa-solid fa-sparkles"></i> 100% Legit & Fast Service • Safe Gaming
+        </div>
+        <h2 class="hero-title">
+          Cute, Cheap & Legit <br>
+          <span class="gradient-text">Gaming Top-Ups!</span> 🎀
+        </h2>
+        <p class="hero-subtitle">
+          Affordable <strong>Robux</strong>, <strong>Valorant Points</strong>, and <strong>Mobile Legends Diamonds &
+            Passes</strong> by <em>Rose Mae Rama</em>. Direct crediting, student-friendly rates, and friendly customer
+          care!
+        </p>
+
+        <!-- Quick Contacts Bar -->
+        <div class="quick-contact-card">
+          <div class="contact-pill-item">
+            <div class="pill-icon email-icon"><i class="fa-solid fa-envelope"></i></div>
+            <div class="pill-details">
+              <span class="pill-sub">Official Gmail</span>
+              <a href="mailto:ramarosemae3@gmail.com" class="pill-val">ramarosemae3@gmail.com</a>
+            </div>
+            <button class="mini-copy-btn" onclick="copyToClipboard('ramarosemae3@gmail.com', 'Gmail copied! 💌')"
+              title="Copy Gmail">
+              <i class="fa-regular fa-copy"></i>
+            </button>
+          </div>
+
+          <div class="contact-pill-item">
+            <div class="pill-icon phone-icon"><i class="fa-solid fa-phone"></i></div>
+            <div class="pill-details">
+              <span class="pill-sub">Phone / GCash / Maya</span>
+              <a href="tel:09912748872" class="pill-val">09912748872</a>
+            </div>
+            <button class="mini-copy-btn" onclick="copyToClipboard('09912748872', 'Phone number copied! 📞')"
+              title="Copy Phone">
+              <i class="fa-regular fa-copy"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="hero-cta-group">
+          <a href="#catalog" class="btn-bubble btn-primary">
+            <i class="fa-solid fa-bag-shopping"></i> View Pricelist & Order
+          </a>
+          <a href="#how-to-order" class="btn-bubble btn-secondary">
+            <i class="fa-solid fa-circle-question"></i> How to Order
+          </a>
+        </div>
+
+        <!-- Trust Highlights -->
+        <div class="trust-pills">
+          <div class="trust-badge"><i class="fa-solid fa-shield-heart"></i> 100% Legit & Proven</div>
+          <div class="trust-badge"><i class="fa-solid fa-bolt"></i> Fast Processing</div>
+          <div class="trust-badge"><i class="fa-solid fa-wallet"></i> GCash & Maya Accepted</div>
+        </div>
+      </div>
+
+      <!-- Hero Visual Card -->
+      <div class="hero-visual">
+        <div class="hero-card-frame">
+          <div class="floating-sticker sticker-kuromi">
+            <span>Kuromi Vibes 💜</span>
+          </div>
+          <div class="floating-sticker sticker-discount">
+            <span>Best Deals! 🏷️</span>
+          </div>
+          <img src="IMAGE/cute_hero.jpg" alt="Rowi's Cute Gamer Hub" class="hero-banner-img"
+            onerror="this.src='IMAGE/robux.jpg'">
+
+          <div class="hero-card-footer">
+            <div class="card-footer-item">
+              <span class="emoji-circle">🎮</span>
+              <div>
+                <strong>3 Top Games</strong>
+                <p>Roblox • Valo • MLBB</p>
+              </div>
+            </div>
+            <div class="card-footer-divider"></div>
+            <div class="card-footer-item">
+              <span class="emoji-circle">💸</span>
+              <div>
+                <strong>From ₱10</strong>
+                <p>Super Student Friendly</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Official Flyers Gallery & Verification -->
+  <section id="original-posters" class="gallery-section">
+    <div class="container">
+      <div class="section-heading text-center">
+        <span class="sub-badge"><i class="fa-solid fa-camera-retro"></i> Proof of Legitimacy</span>
+        <h2 class="section-title">Official Shop Flyers & Pricelists</h2>
+        <p class="section-desc">Click on any poster to view full resolution and inspect all original rates and policies!
+        </p>
+      </div>
+
+      <div class="gallery-grid">
+
+        <!-- Flyer 1: Robux -->
+        <div class="flyer-card" onclick="openFlyerModal('IMAGE/robux.jpg', 'Rowi Discounted Robux (Kuromi Edition)')">
+          <div class="flyer-badge">Roblox Robux</div>
+          <div class="flyer-thumb-wrap">
+            <img src="IMAGE/robux.jpg" alt="Rowi Discounted Robux Pricelist" loading="lazy">
+            <div class="flyer-hover-overlay">
+              <i class="fa-solid fa-magnifying-glass-plus"></i>
+              <span>Click to Zoom</span>
+            </div>
+          </div>
+          <div class="flyer-info">
+            <h4>Rowi Discounted Robux</h4>
+            <p>5-7 Days Pending • 0-1 Day Process • No Rush Orders</p>
+          </div>
+        </div>
+
+        <!-- Flyer 2: Valorant -->
+        <div class="flyer-card" onclick="openFlyerModal('IMAGE/valo.jpg', 'Discounted Valorant Points (Riot Games)')">
+          <div class="flyer-badge valo-badge">Valorant Points</div>
+          <div class="flyer-thumb-wrap">
+            <img src="IMAGE/valo.jpg" alt="Discounted Valorant Points Pricelist" loading="lazy">
+            <div class="flyer-hover-overlay">
+              <i class="fa-solid fa-magnifying-glass-plus"></i>
+              <span>Click to Zoom</span>
+            </div>
+          </div>
+          <div class="flyer-info">
+            <h4>Discounted Valorant Points</h4>
+            <p>475 VP to 10,700 VP • Fast ID/Riot Tag Crediting</p>
+          </div>
+        </div>
+
+        <!-- Flyer 3: MLBB Dias -->
+        <div class="flyer-card"
+          onclick="openFlyerModal('IMAGE/mobilelegends.jpg', 'Rowi Discounted MLBB Diamonds & Passes')">
+          <div class="flyer-badge mlbb-badge">Mobile Legends</div>
+          <div class="flyer-thumb-wrap">
+            <img src="IMAGE/mobilelegends.jpg" alt="Mobile Legends Diamonds Pricelist" loading="lazy">
+            <div class="flyer-hover-overlay">
+              <i class="fa-solid fa-magnifying-glass-plus"></i>
+              <span>Click to Zoom</span>
+            </div>
+          </div>
+          <div class="flyer-info">
+            <h4>Rowi Discounted MLBB Dias</h4>
+            <p>11 to 1,219 Dias • WDP ₱95 • NSL ₱155 • PSL ₱350</p>
+          </div>
+        </div>
+
+        <!-- Flyer 4: Starlight Promo -->
+        <div class="flyer-card"
+          onclick="openFlyerModal('IMAGE/mlStarlightSKIn.jpg', 'October Starlight Hayabusa Promo & Gifting Rules')">
+          <div class="flyer-badge promo-badge">Starlight Special</div>
+          <div class="flyer-thumb-wrap">
+            <img src="IMAGE/mlStarlightSKIn.jpg" alt="October Starlight Hayabusa Flyer" loading="lazy">
+            <div class="flyer-hover-overlay">
+              <i class="fa-solid fa-magnifying-glass-plus"></i>
+              <span>Click to Zoom</span>
+            </div>
+          </div>
+          <div class="flyer-info">
+            <h4>October Starlight Hayabusa</h4>
+            <p>Normal ₱150 • Premium ₱290 • Read Gifting Rules</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- How to Order & Shop Rules Section -->
+  <section id="how-to-order" class="rules-section">
+    <div class="container">
+      <div class="section-heading text-center">
+        <span class="sub-badge"><i class="fa-solid fa-sparkles"></i> Easy Ordering</span>
+        <h2 class="section-title">How to Order & Important Rules</h2>
+        <p class="section-desc">Follow these 4 simple steps to receive your game credits smoothly!</p>
+      </div>
+
+      <div class="steps-grid">
+        <div class="step-card">
+          <div class="step-number">1</div>
+          <div class="step-icon">🛒</div>
+          <h3>Pick Your Items</h3>
+          <p>Choose your desired Robux, VP, or Diamonds bundle from our cute pricelist below and add them to your order.
+          </p>
+        </div>
+
+        <div class="step-card">
+          <div class="step-number">2</div>
+          <div class="step-icon">💳</div>
+          <h3>Pay via GCash/Maya</h3>
+          <p>Transfer the total amount to Rose Mae's official number: <strong class="copyable-text"
+              onclick="copyToClipboard('09912748872', 'Copied GCash number! 💖')">09912748872</strong>.</p>
+        </div>
+
+        <div class="step-card">
+          <div class="step-number">3</div>
+          <div class="step-icon">💌</div>
+          <h3>Send Details & Receipt</h3>
+          <p>Send your IGN, Game ID, and payment screenshot to <a
+              href="mailto:ramarosemae3@gmail.com">ramarosemae3@gmail.com</a>, SMS, or FB Messenger.</p>
+        </div>
+
+        <div class="step-card">
+          <div class="step-number">4</div>
+          <div class="step-icon">🎉</div>
+          <h3>Credits Received!</h3>
+          <p>Relax while Rose Mae processes your top-up. Enjoy your skins, draws, and game items!</p>
+        </div>
+      </div>
+
+      <!-- Rules & Policies Accordion -->
+      <div class="rules-box">
+        <div class="rules-header">
+          <i class="fa-solid fa-scroll"></i>
+          <h3>Official Shop Rules & Terms (Please Read)</h3>
+        </div>
+        <div class="rules-list">
+          <div class="rule-item">
+            <span class="rule-bullet">🌸</span>
+            <div>
+              <strong>Payment First Policy:</strong> No reservations will be entertained without completed payment.
+            </div>
+          </div>
+          <div class="rule-item">
+            <span class="rule-bullet">🎀</span>
+            <div>
+              <strong>Roblox Robux Pending Policy:</strong> Robux transactions have 5-7 days pending with 0-1 day
+              processing. Please note: <em>NO RUSH ORDERS</em>!
+            </div>
+          </div>
+          <div class="rule-item">
+            <span class="rule-bullet">💎</span>
+            <div>
+              <strong>MLBB Starlight Gifting Rules:</strong>
+              Wait 24-48 hours for gifter in-game details. Gifting takes 8 to 10 days in-game friendship processing
+              before final delivery. Strictly <strong>NO CHANGING OF IGN</strong> during the waiting period (₱60 penalty
+              for IGN changes).
+            </div>
+          </div>
+          <div class="rule-item">
+            <span class="rule-bullet">⚡</span>
+            <div>
+              <strong>Double Check Your In-Game Details:</strong> Please verify your ID, Zone ID, and Riot Tag before
+              submitting. Any typos in customer-provided IDs cannot be refunded once processed.
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Main Game Catalog & Interactive Pricelist -->
+  <section id="catalog" class="catalog-section">
+    <div class="container">
+
+      <div class="section-heading text-center">
+        <span class="sub-badge"><i class="fa-solid fa-star"></i> Our Cute Products</span>
+        <h2 class="section-title">Discounted Game Pricelist</h2>
+        <p class="section-desc">Select your game, click any package to instantly add to your order or calculate your
+          total!</p>
+      </div>
+
+      <!-- Game Category Tabs -->
+      <div class="game-tabs-wrapper">
+        <div class="game-tabs" id="game-filter-tabs">
+          <button class="tab-btn active" data-category="all">
+            <span class="tab-emoji">🌸</span> All Offers
+          </button>
+          <button class="tab-btn" data-category="robux">
+            <span class="tab-emoji">🎀</span> Roblox Robux
+          </button>
+          <button class="tab-btn" data-category="valorant">
+            <span class="tab-emoji">⚡</span> Valorant Points
+          </button>
+          <button class="tab-btn" data-category="mlbb">
+            <span class="tab-emoji">💎</span> MLBB Diamonds
+          </button>
+          <button class="tab-btn" data-category="passes">
+            <span class="tab-emoji">⭐</span> Starlight & Passes
+          </button>
+        </div>
+      </div>
+
+      <!-- Sub Filter Controls (Search + Robux Tax Switch) -->
+      <div class="catalog-controls">
+        <div class="search-box-wrap">
+          <i class="fa-solid fa-magnifying-glass search-icon"></i>
+          <input type="text" id="catalog-search" placeholder="Search amount or package (e.g. 1000, VP, Robux, Pass)..."
+            autocomplete="off">
+          <button id="clear-search" class="clear-search-btn" title="Clear search" style="display:none;">✕</button>
+        </div>
+
+        <!-- Robux Tax Toggle (Active when viewing Robux) -->
+        <div class="robux-tax-filter" id="robux-tax-filter">
+          <span class="filter-label"><i class="fa-solid fa-tag"></i> Robux Tax Mode:</span>
+          <div class="toggle-group">
+            <button class="toggle-btn active" data-tax="covered" id="tax-covered-btn">Covered Tax</button>
+            <button class="toggle-btn" data-tax="not-covered" id="tax-not-covered-btn">Not Covered Tax</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Notice Bar for Active Selection -->
+      <div class="catalog-notice" id="catalog-notice">
+        <i class="fa-solid fa-circle-info"></i>
+        <span id="notice-text">Showing all packages. Click <strong>"Order Now"</strong> to add any item to your checkout
+          cart!</span>
+      </div>
+
+      <!-- Products Grid -->
+      <div class="products-grid" id="products-grid">
+        <!-- Rendered dynamically by JavaScript -->
+      </div>
+
+      <!-- No items found state -->
+      <div id="no-results" class="empty-state" style="display: none;">
+        <div class="empty-icon">૮₍ ˶•⤙•˶ ₎ა</div>
+        <h3>No packages match your search!</h3>
+        <p>Try searching for a different number or click "All Offers" above.</p>
+        <button class="btn-bubble btn-secondary" onclick="resetFilters()">Reset Search</button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Seller Profile & Payment Hub -->
+  <section id="contact" class="seller-section">
+    <div class="container">
+      <div class="seller-card">
+        <div class="seller-profile-side">
+          <div class="profile-avatar-frame">
+            <img src="IMAGE/profilepic.jpg" alt="Rose Mae Rama" class="profile-big-img"
+              onerror="this.src='https://api.dicebear.com/7.x/bottts/svg?seed=Rowi'">
+            <div class="verified-badge" title="Verified Trusted Seller">
+              <i class="fa-solid fa-circle-check"></i>
+            </div>
+          </div>
+          <h3 class="seller-name">Rose Mae Rama</h3>
+          <span class="seller-handle">Owner & Legitimate Seller • "Rowi"</span>
+
+          <div class="seller-badges-row">
+            <span class="pill-badge-pink"><i class="fa-solid fa-heart"></i> Friendly</span>
+            <span class="pill-badge-purple"><i class="fa-solid fa-shield"></i> Verified</span>
+            <span class="pill-badge-green"><i class="fa-solid fa-bolt"></i> Fast Transact</span>
+          </div>
+        </div>
+
+        <div class="seller-info-side">
+          <h3 class="side-title">Direct Contact & Payment Channels</h3>
+          <p class="side-desc">Reach out directly to Rose Mae Rama for questions, rush inquiries, bulk purchases, or
+            order confirmations:</p>
+
+          <div class="contact-channels-grid">
+
+            <!-- Channel 1: Phone & E-Wallet -->
+            <div class="channel-card">
+              <div class="channel-icon phone-bg">
+                <i class="fa-solid fa-mobile-screen"></i>
+              </div>
+              <div class="channel-meta">
+                <span class="channel-title">Phone / GCash / Maya</span>
+                <span class="channel-value">09912748872</span>
+              </div>
+              <div class="channel-actions">
+                <button class="action-btn-copy"
+                  onclick="copyToClipboard('09912748872', 'Copied phone/wallet number! 📱')">
+                  <i class="fa-regular fa-copy"></i> Copy
+                </button>
+                <a href="tel:09912748872" class="action-btn-link" title="Call">
+                  <i class="fa-solid fa-phone"></i>
+                </a>
+              </div>
+            </div>
+
+            <!-- Channel 2: Gmail -->
+            <div class="channel-card">
+              <div class="channel-icon email-bg">
+                <i class="fa-solid fa-envelope"></i>
+              </div>
+              <div class="channel-meta">
+                <span class="channel-title">Official Gmail</span>
+                <span class="channel-value">ramarosemae3@gmail.com</span>
+              </div>
+              <div class="channel-actions">
+                <button class="action-btn-copy"
+                  onclick="copyToClipboard('ramarosemae3@gmail.com', 'Copied email address! 💌')">
+                  <i class="fa-regular fa-copy"></i> Copy
+                </button>
+                <a href="mailto:ramarosemae3@gmail.com?subject=Inquiry%20from%20Rowi%20Game%20Shop"
+                  class="action-btn-link" title="Send Email">
+                  <i class="fa-solid fa-paper-plane"></i>
+                </a>
+              </div>
+            </div>
+
+            <!-- Channel 3: Facebook Profile -->
+            <div class="channel-card">
+              <div class="channel-icon fb-bg">
+                <i class="fa-brands fa-facebook"></i>
+              </div>
+              <div class="channel-meta">
+                <span class="channel-title">Facebook Profile</span>
+                <span class="channel-value">ROSE MAE RAMA</span>
+              </div>
+              <div class="channel-actions">
+                <button class="action-btn-copy" onclick="copyToClipboard('Rose Mae Rama', 'Copied Facebook Name! 🌸')">
+                  <i class="fa-regular fa-copy"></i> Copy
+                </button>
+              </div>
+            </div>
+
+            <!-- Channel 4: Modes of Payment -->
+            <div class="channel-card">
+              <div class="channel-icon pay-bg">
+                <i class="fa-solid fa-credit-card"></i>
+              </div>
+              <div class="channel-meta">
+                <span class="channel-title">Supported Payment Modes</span>
+                <span class="channel-value">GCash • Maya • GoTyme</span>
+              </div>
+              <div class="payment-logos-mini">
+                <span class="pay-tag gcash-tag">GCash</span>
+                <span class="pay-tag maya-tag">Maya</span>
+                <span class="pay-tag gotyme-tag">GoTyme</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Slide-Out Cart / Order Drawer -->
+  <aside id="cart-drawer" class="cart-drawer" aria-hidden="true">
+    <div class="drawer-overlay" id="drawer-overlay"></div>
+    <div class="drawer-panel">
+
+      <div class="drawer-header">
+        <div class="drawer-title-wrap">
+          <span class="drawer-emoji">🛍️</span>
+          <div>
+            <h3>Your Cute Cart</h3>
+            <p>Review items before submitting</p>
+          </div>
+        </div>
+        <button id="close-cart-btn" class="drawer-close-btn" aria-label="Close Cart">✕</button>
+      </div>
+
+      <!-- Cart Items List -->
+      <div class="drawer-body">
+        <div id="cart-items-container" class="cart-items-list">
+          <!-- Rendered by JS -->
+        </div>
+
+        <div id="cart-empty-message" class="cart-empty-state">
+          <div class="empty-kaomoji">૮₍ ˶ᵔ ᵕ ᵔ˶ ₎ა</div>
+          <p>Your cart is empty!</p>
+          <small>Click "Order Now" on any game pack to add items.</small>
+          <button class="btn-bubble btn-primary" onclick="closeCartDrawer(); window.location.hash='#catalog';">
+            Browse Pricelist
+          </button>
+        </div>
+      </div>
+
+      <!-- Drawer Footer with Total & Checkout Form -->
+      <div class="drawer-footer" id="drawer-footer" style="display: none;">
+        <div class="cart-summary-row">
+          <span>Total Amount:</span>
+          <span id="cart-total-price" class="cart-grand-total">₱0.00</span>
+        </div>
+
+        <button id="proceed-checkout-btn" class="btn-bubble btn-primary w-100" onclick="openOrderModal()">
+          <i class="fa-solid fa-heart"></i> Proceed to Order Info
+        </button>
+
+        <button class="btn-clear-cart" onclick="clearCart()">
+          <i class="fa-regular fa-trash-can"></i> Clear All Items
+        </button>
+      </div>
+
+    </div>
+  </aside>
+
+  <!-- Order & Checkout Modal -->
+  <div id="order-modal" class="custom-modal" aria-hidden="true">
+    <div class="modal-backdrop" onclick="closeOrderModal()"></div>
+    <div class="modal-content">
+      <button class="modal-close-btn" onclick="closeOrderModal()">✕</button>
+
+      <div class="modal-header">
+        <span class="modal-emoji">💌</span>
+        <h3>Order Receipt & Form</h3>
+        <p>Fill in your in-game details to generate your official order receipt!</p>
+      </div>
+
+      <div class="modal-body">
+        <!-- Order Items Summary in Modal -->
+        <div class="order-summary-box">
+          <h4>Items in Order:</h4>
+          <ul id="modal-items-summary" class="summary-list"></ul>
+          <div class="summary-total-bar">
+            <span>Total Payable:</span>
+            <strong id="modal-total-display">₱0.00</strong>
+          </div>
+        </div>
+
+        <!-- Order Form Fields -->
+        <form id="order-form" onsubmit="handleOrderSubmit(event)">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="order-cust-name"><i class="fa-solid fa-user"></i> Your Full Name / Nickname *</label>
+              <input type="text" id="order-cust-name" required placeholder="e.g. Maria Santos">
+            </div>
+            <div class="form-group">
+              <label for="order-cust-phone"><i class="fa-solid fa-phone"></i> Your Contact Phone *</label>
+              <input type="tel" id="order-cust-phone" required placeholder="e.g. 09123456789">
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="order-game-ign"><i class="fa-solid fa-gamepad"></i> In-Game Name (IGN) *</label>
+              <input type="text" id="order-game-ign" required placeholder="e.g. RoseGamer_99">
+            </div>
+            <div class="form-group">
+              <label for="order-game-id"><i class="fa-solid fa-id-card"></i> In-Game ID / Server / Riot Tag *</label>
+              <input type="text" id="order-game-id" required placeholder="e.g. 12345678 (1234) or Tag#PH1">
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="order-payment-method"><i class="fa-solid fa-wallet"></i> Payment Method *</label>
+              <select id="order-payment-method" required>
+                <option value="GCash">GCash (09912748872 - Rose Mae Rama)</option>
+                <option value="Maya">Maya (09912748872 - Rose Mae Rama)</option>
+                <option value="GoTyme">GoTyme Bank</option>
+                <option value="SeaBank">SeaBank</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="order-cust-email"><i class="fa-solid fa-envelope"></i> Your Email (Optional)</label>
+              <input type="email" id="order-cust-email" placeholder="e.g. yourname@gmail.com">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="order-notes"><i class="fa-regular fa-comment-dots"></i> Special Notes / Questions
+              (Optional)</label>
+            <textarea id="order-notes" rows="2"
+              placeholder="e.g. Will pay immediately via GCash, please acknowledge!"></textarea>
+          </div>
+
+          <button type="submit" class="btn-bubble btn-primary w-100 modal-submit-btn">
+            <i class="fa-solid fa-sparkles"></i> Generate Order Receipt & Copy
+          </button>
+        </form>
+
+        <!-- Generated Order Output Box (Shown after submit) -->
+        <div id="order-receipt-result" class="receipt-result-box" style="display: none;">
+          <div class="receipt-header">
+            <span class="sparkle-tag">✨ ORDER RECEIPT GENERATED ✨</span>
+            <p>Copy this receipt and send it to <strong>Rose Mae Rama</strong> via Messenger, SMS, or Email!</p>
+          </div>
+
+          <div class="receipt-text-preview" id="receipt-text-preview"></div>
+
+          <div class="receipt-action-buttons">
+            <button class="btn-bubble btn-primary" onclick="copyOrderReceipt()">
+              <i class="fa-regular fa-copy"></i> Copy Order Details
+            </button>
+            <a id="send-sms-link" class="btn-bubble btn-sms" href="#" target="_blank">
+              <i class="fa-solid fa-message"></i> Send via SMS
+            </a>
+            <a id="send-email-link" class="btn-bubble btn-email" href="#" target="_blank">
+              <i class="fa-solid fa-envelope"></i> Send via Gmail
+            </a>
+          </div>
+
+          <!-- Quick Payment Reminder -->
+          <div class="payment-reminder-card">
+            <h4>💳 Send Payment To:</h4>
+            <div class="payment-number-row">
+              <span class="highlight-number">09912748872</span>
+              <span class="name-badge">Rose Mae Rama</span>
+              <button class="mini-copy-btn" onclick="copyToClipboard('09912748872', 'GCash/Maya number copied! 💖')">
+                <i class="fa-regular fa-copy"></i> Copy
+              </button>
+            </div>
+            <p><small>Modes: GCash • Maya • GoTyme. Always take a screenshot of your payment receipt to attach in your
+                message!</small></p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Image Lightbox Modal for Original Posters -->
+  <div id="flyer-lightbox-modal" class="custom-modal" aria-hidden="true">
+    <div class="modal-backdrop" onclick="closeFlyerModal()"></div>
+    <div class="modal-content flyer-modal-content">
+      <button class="modal-close-btn" onclick="closeFlyerModal()">✕</button>
+      <div class="modal-header">
+        <h3 id="flyer-modal-title">Official Flyer</h3>
+      </div>
+      <div class="flyer-modal-body">
+        <img id="flyer-modal-img" src="" alt="Full Flyer" class="full-flyer-img">
+      </div>
+      <div class="flyer-modal-footer">
+        <a id="flyer-modal-open-link" href="#" target="_blank" class="btn-bubble btn-secondary">
+          <i class="fa-solid fa-arrow-up-right-from-square"></i> Open High-Res in New Tab
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Popup -->
+  <div id="toast" class="toast-popup" role="status" aria-live="polite">
+    <span class="toast-icon">✨</span>
+    <span id="toast-message">Copied to clipboard!</span>
+  </div>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="avatar-ring-small">
+            <img src="IMAGE/profilepic.jpg" alt="Rose Mae Rama"
+              onerror="this.src='https://api.dicebear.com/7.x/bottts/svg?seed=Rowi'">
+          </div>
+          <div>
+            <h3>Rowi's Discounted Game Shop</h3>
+            <p>Owned & Managed by <strong>Rose Mae Rama</strong></p>
+          </div>
+        </div>
+
+        <div class="footer-contact-links">
+          <a href="mailto:ramarosemae3@gmail.com"><i class="fa-solid fa-envelope"></i> ramarosemae3@gmail.com</a>
+          <a href="tel:09912748872"><i class="fa-solid fa-phone"></i> 09912748872</a>
+          <a href="https://www.facebook.com/rosiee13"><i class="fa-brands fa-facebook"></i> Rose Mae Rama</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 Rowi's Game Shop. All rights reserved. Robux, Valorant Points & MLBB are registered trademarks of
+          their respective owners.</p>
+        <p class="love-tag">Crafted with lots of pink love & sparkles 🌸✨</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="app.js"></script>
+</body>
+
+</html>
